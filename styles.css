@@ -33,6 +33,7 @@ body{
     height: 100%;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
+    background-color: gainsboro;
 }
 .header{
     display: flex;
