@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+/* vars */
+:root{
+    --textWhite: #DDDDDD;
+    --textDark: #333333;
+    --bgDark: #282C35;
+    --bgWhite: #ffffff;
+    --shadowDark: 0px 48px 40px -24px rgba(0, 0, 0, 0.16);
+    --shadowLight: 0px 48px 56px -24px rgba(0, 0, 0, 0.08);
+}
+
+/* typography */
+h1{
+    line-height: 64px;
+    font-size: 56px;
+    font-weight: bold;
+}
+p{
+font-weight: normal;
+font-size: 40px;
+line-height: 48px;
+}
+
+/* main */
+body{
+    display: flex;
+    box-sizing: border-box;
+    padding: 64px;
+    height: 100%;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header{
+    display: flex;
+    background-color: var(--bgDark);
+    margin-bottom: 32px;
+    padding: 48 56;
+    border-radius: 30px;
+    color: var(--textWhite);
+    box-shadow: var(--shadowDark);
+}
+.avatar{
+    min-width: 256px;
+    min-height: 256px;
+    /* background-image: url(https://i.vas3k.club/2a8.jpg); */
+    background-size: cover;
+    border-radius: 128px;
+    margin-right: 48px;
+}
+.content{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    justify-content: center;
+    margin-right: 48px;
+}
+.content h1{
+    margin-bottom: 8px;
+}
+.content p{
+    margin-top: 16px;
+}
+.qr{
+    min-width: 256px;
+    min-height: 256px;
+    border-radius: 15px;
+    /* background-image: url(https://live.staticflickr.com/1230/1462905568_6b72fbc700_n.jpg); */
+    background-size: cover;
+}
+.description{
+    flex-grow: 1;
+    border-radius: 30px;
+    background-color: var(--bgWhite);
+    padding: 64 80 60 80;
+    box-shadow: var(--shadowLight);
+    font-size: 48px;
+    line-height: 64px;
+    color: var(--textDark);
+}
